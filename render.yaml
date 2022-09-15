@@ -1,0 +1,12 @@
+services:
+  # A Docker web service
+  - type: web
+    name: influxdb
+    env: docker
+    region: oregon # optional (defaults to oregon)
+    plan: standard # optional (defaults to starter)
+    healthCheckPath: /
+  disk:
+    name: influxdb-data
+    mountPath: /var/lib/influxdb2
+    sizeGB: 10
