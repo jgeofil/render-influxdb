@@ -2,8 +2,11 @@ services:
   - type: web
     name: influxdb
     env: docker
-    region: oregon # optional (defaults to oregon)
-    plan: standard # optional (defaults to starter)
+    region: oregon
+    plan: standard
+    envVars:
+      - key: PORT
+        value: 8086
     disk:
       name: influxdb-data
       mountPath: /var/lib/influxdb2
