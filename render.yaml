@@ -4,7 +4,6 @@ services:
     env: docker
     region: oregon # optional (defaults to oregon)
     plan: standard # optional (defaults to starter)
-    healthCheckPath: /
     disk:
       name: influxdb-data
       mountPath: /var/lib/influxdb2
