@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: influxdb
+    name: influxdb:2.4.0
     env: docker
     region: oregon # optional (defaults to oregon)
     plan: standard # optional (defaults to starter)
