@@ -4,7 +4,6 @@ services:
     env: docker
     region: oregon
     plan: standard
-    healthCheckPath: /
     envVars:
       - key: DOCKER_INFLUXDB_INIT_USERNAME
         sync: false
