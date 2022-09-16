@@ -4,6 +4,7 @@ services:
     env: docker
     region: oregon
     plan: standard
+    healthCheckPath: /
     envVars:
       - key: PORT
         value: 8086
