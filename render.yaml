@@ -6,8 +6,6 @@ services:
     plan: standard
     healthCheckPath: /
     envVars:
-      - key: PORT
-        value: 8086
       - key: DOCKER_INFLUXDB_INIT_USERNAME
         sync: false
       - key: DOCKER_INFLUXDB_INIT_PASSWORD
